@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/*========= レイアウトのためのCSS ===============*/
+
+#wrapper{
+	height: 100vh;
+    /*テキストを中央寄せ*/
+	display:flex;
+	justify-content: center;
+	/* align-items:center; */
+	text-align: center;
+}
+
+a{
+	color: #333;
+}
+
+.design {
+    position: absolute;
+    top: 6%;
+    left: 46%;
+}

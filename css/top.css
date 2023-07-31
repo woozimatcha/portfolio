@@ -1,0 +1,236 @@
+/* すべての要素に対して余白の削除と、
+サイズ計算の基準をボーダー以下に設定する */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    text-decoration:none; 
+}
+
+/* 長方形ふたつ */
+.home .home-item a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+}
+
+/* 長方形1の色 */
+.nav-link-skill a {
+    background: #eef9ff;
+}
+.nav-link-skill a:hover {
+  background-image: url("../img/aozora.png");
+  }
+
+
+
+/* 長方形2の色 */
+.nav-link-design a {
+  background: #fff7fe;
+}
+.nav-link-design a:hover {
+  /* background: #fbd3ff; */
+  background-image: url("../img/yozora.png");
+ }
+
+
+/* 白い四角、ロゴ背景 */
+.square {
+    position: absolute;
+    top: 39%;
+    left: 43.5%;
+    /* background-image: url("img/流奈-13.png"); */
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    aspect-ratio: 1;
+    background: #ffffff;
+    box-shadow: -4px -4px 8px #fff, 4px 4px 8px rgb(0 0 0 / 24%);
+  }
+  
+  @media (any-hover: hover) {
+    .square {
+      transition: box-shadow 0.2s;
+    }
+  
+    .square:hover {
+      box-shadow: -2px -2px 4px #fff, 2px 2px 4px rgb(0 0 0 / 24%);
+    }
+  
+    .square:active {
+      background-color: #ebebeb;
+      box-shadow: inset 4px 4px 8px rgb(0 0 0 / 16%);
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+/* カーソルを合わせたらロゴが消える */
+.home-logo img:hover {
+    position: absolute;
+    top: 34.5%;
+    left: 43.5%;
+    width: 240px;
+    height: 240px;
+    background: rgb(255, 255, 255);
+    filter: alpha(opacity=100);
+    -moz-opacity:1;
+    opacity:0;
+}
+
+/* ホーム全体 */
+.home  {
+    position: absolute;  /* アイコンを画面の中心に */
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+/* プロフィール　リンク */
+/* .home-about-wrap .home-link-label {
+    position: absolute;
+    color: #5ecc74;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    filter: alpha(opacity=0);
+    -moz-opacity:0;
+    opacity:0;
+}
+
+.home-about-wrap .home-link-label:hover {
+    filter: alpha(opacity=100);
+    -moz-opacity:1;
+    opacity:1;
+} */
+
+/* スキル　リンク */
+.home-link-label_s  {
+    position: absolute;
+    width: auto;
+    height: auto;
+    color: rgb(0, 0, 0);
+    top: 50%;
+    left: 21%;
+}
+
+
+/* 作品　リンク */
+.home-link-label_d {
+    position: absolute;
+    width: auto;
+    height: auto;
+    color: rgb(0, 0, 0);
+    top: 50%;
+    left: 76%;
+}
+
+
+
+
+/* ボタン */
+
+/* aタグのリセットCSS（不要な場合、セレクタごと削除してください） */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* buttonタグのリセットCSS（不要な場合、セレクタごと削除してください） */
+button {
+    padding: 0;
+    font-family: inherit;
+    appearance: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+  
+  /* ボタン1 */
+  .buttonNeumorphism {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    aspect-ratio: 1;
+    background: #eef9ff;
+    border-radius: 50%;
+    box-shadow: -4px -4px 8px #fff, 4px 4px 8px rgb(0 0 0 / 24%);
+  }
+  .buttonNeumorphism img {
+    object-position: 0 3px;
+  }
+  
+  @media (any-hover: hover) {
+    .buttonNeumorphism {
+      transition: box-shadow 0.2s;
+    }
+  
+    .buttonNeumorphism:hover {
+      box-shadow: -2px -2px 4px #fff, 2px 2px 4px rgb(0 0 0 / 24%);
+    }
+  
+    .buttonNeumorphism:active {
+      background-color: #ebebeb;
+      box-shadow: inset 4px 4px 8px rgb(0 0 0 / 16%);
+    }
+  }
+
+  /* ボタン2 */
+  .buttonNeumorphism_2 {
+    position: absolute;
+    top: 70%;
+    left: 75%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    aspect-ratio: 1;
+    background: #fff7fe;
+    border-radius: 50%;
+    box-shadow: -4px -4px 8px #fff, 4px 4px 8px rgb(0 0 0 / 24%);
+  }
+
+  .buttonNeumorphism_2 img {
+    object-position: 0 3px;
+  }
+  
+  @media (any-hover: hover) {
+    .buttonNeumorphism_2 {
+      transition: box-shadow 0.2s;
+    }
+  
+    .buttonNeumorphism_2:hover {
+      box-shadow: -2px -2px 4px #fff, 2px 2px 4px rgb(0 0 0 / 24%);
+    }
+  
+    .buttonNeumorphism_2:active {
+      background-color: #ebebeb;
+      box-shadow: inset 4px 4px 8px rgb(0 0 0 / 16%);
+    }
+  }

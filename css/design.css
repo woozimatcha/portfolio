@@ -1,0 +1,111 @@
+.gallery{
+    columns: 4;/*段組みの数*/
+    padding:0 15px;/*ギャラリー左右に余白をつける*/
+    }
+    
+    .gallery li {
+        margin-bottom: 20px;/*各画像下に余白をつける*/
+    }
+    
+    /*ギャラリー内のイメージは横幅100%にする*/
+    .gallery img{
+        width:100%;
+        height:auto;
+        vertical-align: bottom;/*画像の下にできる余白を削除*/}
+    
+    /*　横幅900px以下の段組み設定　*/
+    @media only screen and (max-width: 900px) {
+        .gallery{
+        columns:3;
+        }	
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .gallery{
+        columns: 2;
+        }	
+    }
+    
+    
+    /*========= レイアウトのためのCSS ===============*/
+    
+    ul{
+        margin:0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    a{
+        color: #333;
+    }
+    
+    a:hover,
+    a:active{
+        text-decoration: none;
+    }
+    
+    /* .h1 { */
+        /* text-align: center; */
+        /* font-size:6vw;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-top:30px;
+        position: absolute;
+        top: 5%; */
+    /* } */
+
+
+    /* animation-name: flipLeft;
+    animation-duration:0.5s;
+    animation-fill-mode:forwards;
+    perspective-origin: left center;
+    opacity: 0; */
+    /* } */
+    
+    @keyframes flipLeft{
+      from {
+       transform: perspective(600px) translate3d(0, 0, 0) rotateY(30deg);
+         opacity: 0;
+      }
+    
+      to {
+      transform: perspective(600px) translate3d(0, 0, 0) rotateY(0deg);
+      opacity: 1;
+      }
+    }
+    
+    
+    
+    
+    
+    
+    .sakuhin {
+        position: absolute;
+        top: 120%;
+        padding-bottom: 6%;
+    }
+
+
+
+    .coppy {
+        position: absolute;
+        top: 45%;
+        
+    }
+
+
+
+
+    .coppy { /* htmlを指定した場合と同じような意味合いです */
+        /* 書体の設定 */
+        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+        /* 日本語の字詰を自動カーニングするように設定 */
+        font-feature-settings: "palt";
+        /* 標準の文字サイズを指定 */
+        font-size: 12pt;
+      
+        /* 文字の色を変数に入れておく */
+        /* --text-color: #46557e; */
+        color: #ff2cea98;
+      }
+        
