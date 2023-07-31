@@ -1,7 +1,3 @@
-/*
- *  Query UI plugin for raindrops on water effect.
- *  https://github.com/d-harel/raindrops.git
- */
 $.widget("water.raindrops", {
     options: {
         waveLength: 340,    // Wave Length. A numeric value. The higher the number, the smaller the wave length.

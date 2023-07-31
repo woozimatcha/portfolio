@@ -27,8 +27,6 @@
     }
     
     
-    /*========= レイアウトのためのCSS ===============*/
-    
     ul{
         margin:0;
         padding: 0;
@@ -43,24 +41,6 @@
     a:active{
         text-decoration: none;
     }
-    
-    /* .h1 { */
-        /* text-align: center; */
-        /* font-size:6vw;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        margin-top:30px;
-        position: absolute;
-        top: 5%; */
-    /* } */
-
-
-    /* animation-name: flipLeft;
-    animation-duration:0.5s;
-    animation-fill-mode:forwards;
-    perspective-origin: left center;
-    opacity: 0; */
-    /* } */
     
     @keyframes flipLeft{
       from {
@@ -77,8 +57,6 @@
     
     
     
-    
-    
     .sakuhin {
         position: absolute;
         top: 120%;
@@ -86,14 +64,11 @@
     }
 
 
-
     .coppy {
         position: absolute;
         top: 45%;
         
     }
-
-
 
 
     .coppy { /* htmlを指定した場合と同じような意味合いです */

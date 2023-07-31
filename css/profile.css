@@ -145,11 +145,6 @@ main {
 
 
 
-
-
-
-
-
 /* bodyとmainの間に差し込まれるフィルタ要素 */
 .background-filter {
   width: 100%;  /* bodyタグと同じ大きさにする */

@@ -25,16 +25,7 @@ $(function(){
 
     ]);
   });
-  /*!
-   * jquery.drawDoughnutChart.js
-   * Version: 0.4.1(Beta)
-   * Inspired by Chart.js(http://www.chartjs.org/)
-   *
-   * Copyright 2014 hiro
-   * https://github.com/githiro/drawDoughnutChart
-   * Released under the MIT license.
-   * 
-   */
+
   ;(function($, undefined) {
     $.fn.drawDoughnutChart = function(data, options) {
       var $this = this,
@@ -47,7 +38,7 @@ $(function(){
         PI = Math.PI,
         settings = $.extend({
           segmentShowStroke : true,
-          segmentStrokeColor : "#686868",  // グラフの枠
+          segmentStrokeColor : "#0C1013",  // グラフの枠
           segmentStrokeWidth : 1,
 
           baseColor: "rgba(0,0,0,0.100)", // 円の影の色
