@@ -47,7 +47,7 @@ $(function(){
         PI = Math.PI,
         settings = $.extend({
           segmentShowStroke : true,
-          segmentStrokeColor : "#0C1013",  // グラフの枠
+          segmentStrokeColor : "#686868",  // グラフの枠
           segmentStrokeWidth : 1,
 
           baseColor: "rgba(0,0,0,0.100)", // 円の影の色
